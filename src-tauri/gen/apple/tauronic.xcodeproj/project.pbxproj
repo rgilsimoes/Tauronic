@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A53D025F45A594C9C83DEE7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085F1B1201874DCD59E7C4D4 /* CoreGraphics.framework */; };
+		34A2C54C58262A5346FA1B11 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEF5D6C1C14256CA1D59D67 /* Metal.framework */; };
+		3D3078C4A161F774EBD1F164 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6870A6C427B2C494A9FC0D8 /* Security.framework */; };
+		6A805897CAD8C2203C1CEA8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9828D218687AA9944700191C /* LaunchScreen.storyboard */; };
+		85CAEAF6CC86CB267EA9D128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1FA1D0A645D8F1AEFEFE303 /* Assets.xcassets */; };
+		97FE1A145DAFA7E46A6EC36F /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D744F7BD182EFFA2EF0409 /* MetalKit.framework */; };
+		A53C3D22F707D3FBC9CB9D98 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 36734BFECCC843F68DC46CB6 /* assets */; };
+		A762858DC359CB6241E8ED08 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B30D863DC85255F89A3108 /* WebKit.framework */; };
+		AB88ADF6A4AD67029AAD071D /* libtauronic_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DECAE7017F0CD772BC23FFF1 /* libtauronic_lib.a */; };
+		B0E200522DD1DB871E14D3C0 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC517054219046AAB61D4254 /* main.mm */; };
+		C953A74399F5E4164551241F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A393D5BCB6BC8C4A5474902 /* QuartzCore.framework */; };
+		CB30AC2EB36A66CED94E2B43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2C10C5248E501B8BE4B838 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04B30D863DC85255F89A3108 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		04E5EFAD4E22F712E617CCC5 /* tauronic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tauronic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		085F1B1201874DCD59E7C4D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		17FAACE9DA89DDDFB8C006B6 /* lib.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = lib.rs; sourceTree = "<group>"; };
+		23D744F7BD182EFFA2EF0409 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		2C2C10C5248E501B8BE4B838 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		36734BFECCC843F68DC46CB6 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		5AED23AD1323F4F27B67CA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6A393D5BCB6BC8C4A5474902 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9828D218687AA9944700191C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAEF5D6C1C14256CA1D59D67 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		BBF1151478FE063891087763 /* main.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.rs; sourceTree = "<group>"; };
+		C1FA1D0A645D8F1AEFEFE303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB8B09439C2E0006B26D18D8 /* tauronic_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tauronic_iOS.entitlements; sourceTree = "<group>"; };
+		D2740A3366E415FD8E41ABC1 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		DC517054219046AAB61D4254 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		DECAE7017F0CD772BC23FFF1 /* libtauronic_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtauronic_lib.a; sourceTree = "<group>"; };
+		F6870A6C427B2C494A9FC0D8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E94FF9C51EC524B7416E8D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB88ADF6A4AD67029AAD071D /* libtauronic_lib.a in Frameworks */,
+				2A53D025F45A594C9C83DEE7 /* CoreGraphics.framework in Frameworks */,
+				34A2C54C58262A5346FA1B11 /* Metal.framework in Frameworks */,
+				97FE1A145DAFA7E46A6EC36F /* MetalKit.framework in Frameworks */,
+				C953A74399F5E4164551241F /* QuartzCore.framework in Frameworks */,
+				3D3078C4A161F774EBD1F164 /* Security.framework in Frameworks */,
+				CB30AC2EB36A66CED94E2B43 /* UIKit.framework in Frameworks */,
+				A762858DC359CB6241E8ED08 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1305FD007753B99B035A514D /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		30D34E466A794414727F8ED6 /* tauronic_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5AED23AD1323F4F27B67CA09 /* Info.plist */,
+				CB8B09439C2E0006B26D18D8 /* tauronic_iOS.entitlements */,
+			);
+			path = tauronic_iOS;
+			sourceTree = "<group>";
+		};
+		44FE6D1301231482362CCE2E /* tauronic */ = {
+			isa = PBXGroup;
+			children = (
+				DC517054219046AAB61D4254 /* main.mm */,
+				80D2CE967490DA93071487E7 /* bindings */,
+			);
+			path = tauronic;
+			sourceTree = "<group>";
+		};
+		5CB39F3103B0897F80358760 = {
+			isa = PBXGroup;
+			children = (
+				36734BFECCC843F68DC46CB6 /* assets */,
+				C1FA1D0A645D8F1AEFEFE303 /* Assets.xcassets */,
+				9828D218687AA9944700191C /* LaunchScreen.storyboard */,
+				1305FD007753B99B035A514D /* Externals */,
+				8A9D481292B3D26E70546C74 /* Sources */,
+				E057EDF4C9F482F27570EEE3 /* src */,
+				30D34E466A794414727F8ED6 /* tauronic_iOS */,
+				9CC2384B73C8A7A230D624B6 /* Frameworks */,
+				74BA9AC360057CF2FC970363 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74BA9AC360057CF2FC970363 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E5EFAD4E22F712E617CCC5 /* tauronic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80D2CE967490DA93071487E7 /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				D2740A3366E415FD8E41ABC1 /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		8A9D481292B3D26E70546C74 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				44FE6D1301231482362CCE2E /* tauronic */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9CC2384B73C8A7A230D624B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				085F1B1201874DCD59E7C4D4 /* CoreGraphics.framework */,
+				DECAE7017F0CD772BC23FFF1 /* libtauronic_lib.a */,
+				AAEF5D6C1C14256CA1D59D67 /* Metal.framework */,
+				23D744F7BD182EFFA2EF0409 /* MetalKit.framework */,
+				6A393D5BCB6BC8C4A5474902 /* QuartzCore.framework */,
+				F6870A6C427B2C494A9FC0D8 /* Security.framework */,
+				2C2C10C5248E501B8BE4B838 /* UIKit.framework */,
+				04B30D863DC85255F89A3108 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E057EDF4C9F482F27570EEE3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				17FAACE9DA89DDDFB8C006B6 /* lib.rs */,
+				BBF1151478FE063891087763 /* main.rs */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		873777196A840FEA53B346EE /* tauronic_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A3750F0C4DBDB455A260090 /* Build configuration list for PBXNativeTarget "tauronic_iOS" */;
+			buildPhases = (
+				720B292D14D45C4C50A79456 /* Build Rust Code */,
+				5856E7307ACFBD5C7F0145F8 /* Sources */,
+				D2874981B9406338CB9E8BE0 /* Resources */,
+				5E94FF9C51EC524B7416E8D2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tauronic_iOS;
+			productName = tauronic_iOS;
+			productReference = 04E5EFAD4E22F712E617CCC5 /* tauronic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4822CF15B0101A281C8AC632 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = D1EFDACA74D3D081726A6F57 /* Build configuration list for PBXProject "tauronic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5CB39F3103B0897F80358760;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				873777196A840FEA53B346EE /* tauronic_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2874981B9406338CB9E8BE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CAEAF6CC86CB267EA9D128 /* Assets.xcassets in Resources */,
+				6A805897CAD8C2203C1CEA8B /* LaunchScreen.storyboard in Resources */,
+				A53C3D22F707D3FBC9CB9D98 /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		720B292D14D45C4C50A79456 /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Externals/x86_64/${CONFIGURATION}/libtauronic_lib.a",
+				"$(SRCROOT)/Externals/arm64/${CONFIGURATION}/libtauronic_lib.a",
+				"$(SRCROOT)/Externals/arm64-sim/${CONFIGURATION}/libtauronic_lib.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pnpm tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5856E7307ACFBD5C7F0145F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E200522DD1DB871E14D3C0 /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1C45AC3095B55E82A81C0625 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+		346485F533148069C9109443 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tauronic_iOS/tauronic_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = TH5KG5474M;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = tauronic_iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tauronic;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tauronic.dev;
+				PRODUCT_NAME = tauronic;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = release;
+		};
+		647E3EED51F8211292F2D795 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tauronic_iOS/tauronic_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = TH5KG5474M;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = tauronic_iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tauronic;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tauronic.dev;
+				PRODUCT_NAME = tauronic;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = debug;
+		};
+		DA0B768C88F1BE4A95D1B90A /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A3750F0C4DBDB455A260090 /* Build configuration list for PBXNativeTarget "tauronic_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647E3EED51F8211292F2D795 /* debug */,
+				346485F533148069C9109443 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		D1EFDACA74D3D081726A6F57 /* Build configuration list for PBXProject "tauronic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0B768C88F1BE4A95D1B90A /* debug */,
+				1C45AC3095B55E82A81C0625 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4822CF15B0101A281C8AC632 /* Project object */;
+}

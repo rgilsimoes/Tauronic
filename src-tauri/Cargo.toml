@@ -1,0 +1,23 @@
+[package]
+name = "tauronic"
+version = "0.0.0"
+description = "Tauronic Starter Kit"
+authors = ["ricardo.gil.simoes@gmail.com"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "tauronic_lib"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.0-beta", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0-beta", features = [] }
+tauri-plugin-shell = "2.0.0-beta"
+tauri-plugin-os = "2.0.0-beta"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+

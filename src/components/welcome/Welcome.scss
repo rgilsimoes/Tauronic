@@ -1,0 +1,34 @@
+.logo {
+  height: 6em;
+  padding: 1em;
+  will-change: filter;
+  transition: 0.75s;
+}
+
+.tauronic-logo {
+  margin: auto;
+  max-height: 50vh;
+  max-width: 80%;
+}
+
+.logo.vite:hover {
+  filter: drop-shadow(0 0 2em #747bff);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafb);
+}
+
+.logo.tauri:hover {
+  filter: drop-shadow(0 0 2em #dbc324);
+}
+
+.logo.ionic:hover {
+  filter: drop-shadow(0 0 2em #0a00c7);
+}
+
+.welcome {
+  a {
+    text-decoration: none;
+  }
+}
