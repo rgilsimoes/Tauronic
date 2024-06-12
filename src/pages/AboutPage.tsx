@@ -34,6 +34,11 @@ const About: React.FC = () => {
             <h2>Platform: {platformName}</h2>
           </IonCardContent>
         </IonCard>
+        <a href="https://www.buymeacoffee.com/rgilsimoes" target="_blank" rel='noreferrer noopener'>
+          <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"
+            alt="Buy Me A Coffee" className='buymeacoffee' />
+        </a>
+
       </IonContent>
     </IonPage>
   );
