@@ -9,4 +9,15 @@
       --color: var(--ion-color-white);
     }
   }
+
+  ion-card-content {
+    h2 {
+      padding: 10px 0;
+      font-weight: 700;
+    }
+
+    p {
+      line-height: 1.5rem;
+    }
+  }
 }
