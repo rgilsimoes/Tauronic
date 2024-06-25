@@ -1,5 +1,11 @@
 {
   "name": "Tauronic",
+  "id": "tauronic",
+  "description": "Tauri with Ionic React Kit",
+  "author": "Ricardo Simões",
+  "authorUrl": "https://github.com/rgilsimoes/tauronic",
+  "supportUrl": "https://github.com/rgilsimoes/tauronic/issues",
+  "version": "1.0.0",
   "integrations": {
     "capacitor": {}
   },
