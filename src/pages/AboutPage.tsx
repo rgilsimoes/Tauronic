@@ -14,7 +14,7 @@ import useTauriApi from '@services/useTauriApi';
 import TauriAPI from '@services/TauriAPI';
 import { getName, getTauriVersion } from '@tauri-apps/api/app';
 import './AboutPage.scss';
-import { Sponsor } from '@components/sponsor/Sponsor';
+import Sponsor from '@components/sponsor/Sponsor';
 
 const AboutPage: React.FC = () => {
   const { result: appName } = useTauriApi(getName, []);

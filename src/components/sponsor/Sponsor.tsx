@@ -1,6 +1,6 @@
 import { IonGrid, IonRow, IonCol } from '@ionic/react';
 
-export const Sponsor: React.FC = () => (
+const Sponsor: React.FC = () => (
   <IonGrid className='ion-padding'>
     <IonRow className='ion-align-items-center'>
       <IonCol className='ion-text-center'>
@@ -48,3 +48,5 @@ export const Sponsor: React.FC = () => (
     </IonRow>
   </IonGrid>
 );
+
+export default Sponsor;

@@ -1,24 +1,31 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonText,
+  IonTitle,
+  IonToolbar,
+} from '@ionic/react';
 import './IntegrationsPage.scss';
 
 const IntegrationsPage: React.FC = () => (
-  <IonPage className="ui-components-page">
+  <IonPage className='ui-components-page'>
     <IonHeader>
       <IonToolbar>
-        <IonTitle>Integrations</IonTitle>
+        <IonTitle>Native Integrations</IonTitle>
       </IonToolbar>
     </IonHeader>
     <IonContent fullscreen>
-      <IonHeader collapse="condense">
+      <IonHeader collapse='condense'>
         <IonToolbar>
-          <IonTitle size="large">Integrations</IonTitle>
+          <IonTitle size='large'>Native Integrations</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <h1>UI Components</h1>
-      TBD
+      <IonText className='ion-text-center' color='secondary'>
+        <h2>Native Tauri Integrations</h2>
+      </IonText>
     </IonContent>
   </IonPage>
 );
-
 
 export default IntegrationsPage;
