@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "873777196A840FEA53B346EE"
-               BuildableName = "tauronic.app"
+               BuildableName = "Tauronic.app"
                BlueprintName = "tauronic_iOS"
                ReferencedContainer = "container:tauronic.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "873777196A840FEA53B346EE"
-            BuildableName = "tauronic.app"
+            BuildableName = "Tauronic.app"
             BlueprintName = "tauronic_iOS"
             ReferencedContainer = "container:tauronic.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "873777196A840FEA53B346EE"
-            BuildableName = "tauronic.app"
+            BuildableName = "Tauronic.app"
             BlueprintName = "tauronic_iOS"
             ReferencedContainer = "container:tauronic.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "873777196A840FEA53B346EE"
-            BuildableName = "tauronic.app"
+            BuildableName = "Tauronic.app"
             BlueprintName = "tauronic_iOS"
             ReferencedContainer = "container:tauronic.xcodeproj">
          </BuildableReference>

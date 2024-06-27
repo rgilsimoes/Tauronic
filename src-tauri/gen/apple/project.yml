@@ -1,6 +1,6 @@
 name: tauronic
 options:
-  bundleIdPrefix: com.tauri.dev
+  bundleIdPrefix: com.tauronic.kit
   deploymentTarget:
     iOS: 13.0
 fileGroups: [../../src]
@@ -10,8 +10,8 @@ configs:
 settingGroups:
   app:
     base:
-      PRODUCT_NAME: tauronic
-      PRODUCT_BUNDLE_IDENTIFIER: com.tauri.dev
+      PRODUCT_NAME: Tauronic
+      PRODUCT_BUNDLE_IDENTIFIER: com.tauronic.kit
 targetTemplates:
   app:
     type: application
