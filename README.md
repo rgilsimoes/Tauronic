@@ -54,6 +54,8 @@ If you prefer to develop native, you can launch Tauri for iOS, Android, or your 
   pnpm tauri:dev
 ```
 
+> NOTE: Make sure to adjust the environment settings in `scripts/devIos.sh` or `scripts/devAndroid.sh` accordingly!
+
 ## Tech Stack
 
 **Web:** Ionic, React, Vite
