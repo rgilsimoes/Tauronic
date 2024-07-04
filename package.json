@@ -1,7 +1,7 @@
 {
   "name": "tauronic",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.2",
   "type": "module",
   "description": "Tauri with Ionic React Kit",
   "author": {
@@ -21,9 +21,9 @@
     "test-ui": "vitest --ui",
     "coverage": "vitest run --coverage",
     "changelog": "auto-changelog -p && git add CHANGELOG.md",
-    "bumppatch": "yarn version patch -i && ts-appversion",
-    "bumpversion": "yarn version minor -i && ts-appversion",
-    "bumprelease": "yarn version major -i && ts-appversion"
+    "bumppatch": "pnpm version patch -i --force",
+    "bumpversion": "pnpm version minor -i --force",
+    "bumprelease": "npm version major -i --force"
   },
   "dependencies": {
     "@ionic/react": "^8.2.5",
