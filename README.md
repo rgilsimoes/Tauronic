@@ -11,6 +11,12 @@ Tauronic is a cutting-edge React template kit meticulously crafted to streamline
 
 By leveraging the combined strengths of the Ionic framework, Tauri apps, and React, Tauronic provides developers with a robust and flexible toolkit for building modern, performant, and visually appealing applications.
 
+## Screenshots
+![image](https://github.com/rgilsimoes/Tauronic/assets/20357414/4ed7b4b4-6fee-49e6-b30d-ca6760bebc75)
+![image](https://github.com/rgilsimoes/Tauronic/assets/20357414/6df00366-f343-4906-982b-ea17c3da26dd)
+![image](https://github.com/rgilsimoes/Tauronic/assets/20357414/ce0648ca-123d-4792-8c24-79b7dacf8493)
+![image](https://github.com/rgilsimoes/Tauronic/assets/20357414/d20e144c-154d-4856-94c5-ac4759f29441)
+
 
 ## 🚀 About Me
 I'm an "old school" tech mingler. Fullstack meet DevOps "Jack-of-all-trades".
