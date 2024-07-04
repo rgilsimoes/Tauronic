@@ -1,6 +1,9 @@
 import {
   IonContent,
+  IonFooter,
   IonHeader,
+  IonItem,
+  IonList,
   IonPage,
   IonText,
   IonTitle,
@@ -24,7 +27,19 @@ const IntegrationsPage: React.FC = () => (
       <IonText className='ion-text-center' color='secondary'>
         <h2>Native Tauri Integrations</h2>
       </IonText>
+      <IonList>
+        <IonItem detail routerLink='/tabs/integrations/barcode-scanner'>
+          BarCode Scanner Plugin
+        </IonItem>
+      </IonList>
     </IonContent>
+    <IonFooter>
+      <IonToolbar>
+        <IonTitle onClick={() => window.open('https://v2.tauri.app', '_blank')}>
+          Visit @tauri.app
+        </IonTitle>
+      </IonToolbar>
+    </IonFooter>
   </IonPage>
 );
 

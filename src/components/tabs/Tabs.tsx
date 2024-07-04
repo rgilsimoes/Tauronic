@@ -15,6 +15,7 @@ import IntegrationsPage from '@pages/IntegrationsPage';
 import AboutPage from '@pages/AboutPage';
 
 import './Tabs.scss';
+import BarCodeScannerPage from '@pages/integrations/BarCodeScannerPage';
 
 const Tabs: React.FC = () => (
   <IonTabs>
@@ -30,6 +31,9 @@ const Tabs: React.FC = () => (
       </Route>
       <Route exact path={RouteName.ABOUT}>
         <AboutPage />
+      </Route>
+      <Route exact path='/tabs/integrations/barcode-scanner'>
+        <BarCodeScannerPage />
       </Route>
       <Route exact path='/'>
         <Redirect to={RouteName.WELCOME} />
