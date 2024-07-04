@@ -5,17 +5,22 @@ import {
   IonTitle,
   IonContent,
   IonButton,
+  IonBackButton,
+  IonButtons,
 } from '@ionic/react';
 import {
   scan,
   Format,
   checkPermissions,
   requestPermissions,
+  cancel,
 } from '@tauri-apps/plugin-barcode-scanner';
 import { useEffect, useState } from 'react';
 
 const BarCodeScannerPage: React.FC = () => {
   const [hasPermissions, setHasPermissions] = useState(false);
+
+  const [scannedData, setScannedData] = useState<string | null>();
 
   async function openScanner(): Promise<void> {
     // `windowed: true` actually sets the webview to transparent
@@ -25,7 +30,13 @@ const BarCodeScannerPage: React.FC = () => {
       await requestPermission();
     }
     if (hasPermissions) {
-      scan({ windowed: false, formats: [Format.QRCode] });
+      setTimeout(() => {
+        cancel();
+        setScannedData('No data found. Try again.');
+      }, 15000);
+      const data = await scan({ windowed: false, formats: [Format.QRCode] });
+
+      setScannedData(data.content);
     }
   }
 
@@ -56,16 +67,19 @@ const BarCodeScannerPage: React.FC = () => {
     <IonPage className='about-page'>
       <IonHeader style={{ zIndex: 1000 }}>
         <IonToolbar>
-          <IonTitle>About</IonTitle>
+          <IonButtons slot='start'>
+            <IonBackButton defaultHref='/tabs/integrations' />
+          </IonButtons>
+          <IonTitle>Bar Code Scanner</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse='condense'>
           <IonToolbar>
-            <IonTitle size='large'>About</IonTitle>
+            <IonTitle size='large'>Bar Code Scanner</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <h3 className='ion-text-center'>Bar Code Scanner</h3>
+
         <p className='ion-text-center ion-padding'>
           <IonButton expand='full' onClick={() => openScanner()}>
             Open Scanner
@@ -79,8 +93,20 @@ const BarCodeScannerPage: React.FC = () => {
             border: '3px solid black',
             borderRadius: '10px',
             background: 'transparent',
+            display: 'flex',
           }}
-        />
+        >
+          <div style={{ margin: 'auto' }}>{scannedData}</div>
+        </div>
+        <p className='ion-text-center ion-padding'>
+          <IonButton
+            expand='full'
+            disabled={scannedData ? false : true}
+            onClick={() => setScannedData('')}
+          >
+            Clear
+          </IonButton>
+        </p>
       </IonContent>
     </IonPage>
   );

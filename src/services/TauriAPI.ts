@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import * as TauriApp from '@tauri-apps/api/app';
 import * as TauriOs from '@tauri-apps/plugin-os';
 
