@@ -21,8 +21,8 @@ const AboutPage: React.FC = () => {
   const { result: tauriVersion } = useTauriApi(getTauriVersion, []);
   const { result: platformName } = useTauriApi(TauriAPI.getPlatformName, []);
 
-  const ionicVersion = '8.0.0';
-  const viteVersion = '5.2.13';
+  const ionicVersion = '8.2.6';
+  const viteVersion = '5.3.5';
   const reactVersion = '18.3.1';
 
   return (
