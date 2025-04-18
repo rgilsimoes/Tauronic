@@ -1,11 +1,11 @@
 import {
-  IonButton,
-  IonAlert,
   IonActionSheet,
+  IonAlert,
+  IonButton,
   IonFab,
   IonFabButton,
-  IonIcon,
   IonFabList,
+  IonIcon,
 } from '@ionic/react';
 import {
   chevronBackCircle,
@@ -13,8 +13,9 @@ import {
   documentsOutline,
   globe,
 } from 'ionicons/icons';
+import { ReactElement } from 'react';
 
-function AlertSample(): JSX.Element {
+function AlertSample(): ReactElement {
   return (
     <>
       <IonButton id='present-alert'>Alert</IonButton>
@@ -29,7 +30,7 @@ function AlertSample(): JSX.Element {
   );
 }
 
-function ActionSheetSample(): JSX.Element {
+function ActionSheetSample(): ReactElement {
   return (
     <>
       <IonButton id='open-action-sheet'>Open</IonButton>
@@ -63,7 +64,7 @@ function ActionSheetSample(): JSX.Element {
   );
 }
 
-function FabSample(): JSX.Element {
+function FabSample(): ReactElement {
   return (
     <IonFab vertical='bottom' horizontal='end'>
       <IonFabButton size='small'>
